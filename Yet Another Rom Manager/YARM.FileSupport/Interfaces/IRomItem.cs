@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace YARM.FileSupport.Interfaces
+﻿namespace YARM.FileSupport.Interfaces
 {
     internal interface IRomItem
     {
