@@ -1,12 +1,12 @@
 ﻿using YARM.FileSupport.Interfaces;
 
-namespace YARM.FileSupport
+namespace YARM.FileSupport.ContainerTypes
 {
-    internal class Chd : Base.Rom, IRomContainer
+    internal class Directory : IRomContainer
     {
-        public Chd(FileInfo fi)
+        public Directory(DirectoryInfo di)
         {
-            FsContainer = fi;
+            FsContainer = di;
         }
         public IRomItem[] Files => throw new NotImplementedException();
 
@@ -16,7 +16,7 @@ namespace YARM.FileSupport
 
         public string[] Tags => throw new NotImplementedException();
 
-        public RomContainer Type => RomContainer.Chd;
+        public RomContainer Type => RomContainer.Directory;
 
         public int CompareTo(IDatRomFile dat)
         {
